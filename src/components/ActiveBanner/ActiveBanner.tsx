@@ -7,7 +7,7 @@ const ActiveBanner = () => {
   const [isActivePlayer, setIsActivePlayer] = useState(false);
   const [isPlayed, setIsPlayed] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-
+  console.log("hi")
   return (
     <div className="relative">
       {/* Background Image */}
