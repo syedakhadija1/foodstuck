@@ -1,10 +1,4 @@
 import Image from 'next/image';
-import img1 from '../../../public/assets/why1.png';
-import img2 from '../../../public/assets/why2.png';
-import img3 from '../../../public/assets/why3.png';
-import img4 from '../../../public/assets/why4.png';
-import img5 from '../../../public/assets/why5.png';
-import img6 from '../../../public/assets/why6.png';
 
 export const HomeWhyUs = () => {
   return (
@@ -17,7 +11,7 @@ export const HomeWhyUs = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="w-full rounded-lg shadow-lg">
               <Image
-                src={img1}
+                src='/assets/why1.png'
                 alt="Dish 1"
                 width={500}
                 height={500}
@@ -27,7 +21,7 @@ export const HomeWhyUs = () => {
             </div>
             <div className="w-full rounded-lg shadow-lg">
               <Image
-                src={img2}
+                src='/assets/why1.png'
                 alt="Dish 2"
                 width={400}
                 height={400}
@@ -41,7 +35,7 @@ export const HomeWhyUs = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 grid-rows-2 gap-4">
             <div className="col-span-2 sm:col-span-1 row-span-2 w-full rounded-lg shadow-lg">
               <Image
-                src={img3}
+                src='/assets/why1.png'
                 alt="Dish 3"
                 width={400}
                 height={400}
@@ -51,7 +45,7 @@ export const HomeWhyUs = () => {
             </div>
             <div className="col-span-2 sm:col-span-1 row-span-2 w-full rounded-lg shadow-lg">
               <Image
-                src={img4}
+                src='/assets/why1.png'
                 alt="Dish 4"
                 width={400}
                 height={400}
@@ -61,7 +55,7 @@ export const HomeWhyUs = () => {
             </div>
             <div className="w-full rounded-lg shadow-lg">
               <Image
-                src={img5}
+                src='/assets/why1.png'
                 alt="Dish 5"
                 width={400}
                 height={400}
@@ -71,7 +65,7 @@ export const HomeWhyUs = () => {
             </div>
             <div className="w-full rounded-lg shadow-lg">
               <Image
-                src={img6}
+                src='/assets/why1.png'
                 alt="Dish 6"
                 width={400}
                 height={400}

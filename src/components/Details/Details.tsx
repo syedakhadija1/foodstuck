@@ -1,11 +1,5 @@
 'use client';
-
 import Image from "next/image";
-import menuCategoryDill from "../../../public/assets/mainbreakfast.png";
-import sampleDish1 from "../../../public/assets/bf1.png";
-import sampleDish2 from "../../../public/assets/bf2.png";
-import sampleDish3 from "../../../public/assets/bf3.png";
-import sampleDish4 from "../../../public/assets/bf4.png";
 import { useState } from "react";
 
 export const Details = () => {
@@ -14,16 +8,16 @@ export const Details = () => {
 
   // Static dishes data
   const dishes = [
-    { id: 1, title: "Lettuce Leaf", img: sampleDish1, category: "Breakfast", price: 12.5 },
-    { id: 2, title: "Fresh Breakfast", img: sampleDish2, category: "Breakfast", price: 14.5 },
-    { id: 5, title: "Egg Delight", img: sampleDish3, category: "Breakfast", price: 11.0 },
-    { id: 6, title: "Toast Supreme", img: sampleDish4, category: "Breakfast", price: 9.0 },
-    { id: 7, title: "Morning Treat", img: sampleDish1, category: "Breakfast", price: 13.0 },
-    { id: 8, title: "Pancake Stack", img: sampleDish2, category: "Breakfast", price: 15.5 },
-    { id: 9, title: "Berry Bliss", img: sampleDish3, category: "Breakfast", price: 10.0 },
-    { id: 10, title: "Sunrise Special", img: sampleDish3, category: "Breakfast", price: 14.0 },
-    { id: 3, title: "Glow Cheese", img: sampleDish3, category: "Breakfast", price: 12.5 },
-    { id: 4, title: "Mushroom Pizza", img: sampleDish4, category: "Breakfast", price: 12.5 },
+    { id: 1, title: "Lettuce Leaf", img: '/assets/bf1.png', category: "Breakfast", price: 12.5 },
+    { id: 2, title: "Fresh Breakfast", img: '/assets/bf1.png', category: "Breakfast", price: 14.5 },
+    { id: 5, title: "Egg Delight", img: '/assets/bf1.png', category: "Breakfast", price: 11.0 },
+    { id: 6, title: "Toast Supreme", img: '/assets/bf1.png', category: "Breakfast", price: 9.0 },
+    { id: 7, title: "Morning Treat", img: '/assets/bf1.png', category: "Breakfast", price: 13.0 },
+    { id: 8, title: "Pancake Stack", img: '/assets/bf1.png', category: "Breakfast", price: 15.5 },
+    { id: 9, title: "Berry Bliss", img: '/assets/bf1.png', category: "Breakfast", price: 10.0 },
+    { id: 10, title: "Sunrise Special", img: '/assets/bf1.png', category: "Breakfast", price: 14.0 },
+    { id: 3, title: "Glow Cheese", img: '/assets/bf1.png', category: "Breakfast", price: 12.5 },
+    { id: 4, title: "Mushroom Pizza", img: '/assets/bf1.png', category: "Breakfast", price: 12.5 },
   ];
 
   // Filter dishes based on category
@@ -63,7 +57,7 @@ export const Details = () => {
       <div className="flex flex-col md:flex-row items-start">
         {/* Decoration and Highlighted Dish */}
         <div className="relative hidden md:flex w-1/3 flex-col items-center">
-          <Image src={menuCategoryDill} alt="Decoration Dill" className="w-2/3" />
+          <Image src='/assets/mainbreakfast.png' alt="Decoration Dill" className="w-2/3" />
           {/* {filteredDishes.length > 0 && (
             <Image
               src={filteredDishes[0].img}

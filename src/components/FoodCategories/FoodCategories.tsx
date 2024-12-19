@@ -1,12 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// Dummy images (replace with actual paths later)
-import FoodImage1 from "../../../public/assets/food1.png";
-import FoodImage2 from "../../../public/assets/food2.png";
-import FoodImage3 from "../../../public/assets/food3.png";
-import FoodImage4 from "../../../public/assets/food4.png";
-
 // Type definition for the food card
 type FoodCard = {
   img: string;
@@ -14,10 +8,10 @@ type FoodCard = {
 };
 
 const foodCards: FoodCard[] = [
-  { img: FoodImage1.src, buttonText: "Breakfast" },
-  { img: FoodImage2.src, buttonText: "Lunch" },
-  { img: FoodImage3.src, buttonText: "Dinner" },
-  { img: FoodImage4.src, buttonText: "Dessert" },
+  { img: '/assets/food1.png', buttonText: "Breakfast" },
+  { img: '/assets/food1.png', buttonText: "Lunch" },
+  { img: '/assets/food1.png', buttonText: "Dinner" },
+  { img: '/assets/food1.png', buttonText: "Dessert" },
 ];
 
 interface FoodCategoryListProps {

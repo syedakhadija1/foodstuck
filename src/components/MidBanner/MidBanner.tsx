@@ -1,18 +1,10 @@
 import Image from "next/image";
-import HomeStatisticBackground from "../../../public/assets/Midbanner.png";
-import HomeStatisticsIcon1 from "../../../public/assets/Chef.png";
-import HomeStatisticsIcon2 from "../../../public/assets/Happycus.png";
-import HomeStatisticsIcon3 from "../../../public/assets/yoe.png";
-import HomeStatisticsIcon4 from "../../../public/assets/iof.png";
 
 
 export const MidBanner = () => {
   return (
     <div
-      className="relative bg-cover bg-center py-7"
-      style={{
-        backgroundImage: `url(${HomeStatisticBackground.src})`,
-      }}
+      className="relative bg-cover bg-center py-7 bg-[url('/assets/Midbanner.png')]"
     >
       {/* Black Overlay */}
       <div className="absolute inset-0 bg-black/75"></div>
@@ -23,7 +15,7 @@ export const MidBanner = () => {
           {/* Card 1 */}
           <li className="flex flex-col items-center">
             <Image
-              src={HomeStatisticsIcon1}
+              src='/assets/Chef.png'
               alt="chef's icon"
               width={80}
               height={80}
@@ -36,7 +28,7 @@ export const MidBanner = () => {
           {/* Card 2 */}
           <li className="flex flex-col items-center">
             <Image
-              src={HomeStatisticsIcon2}
+              src='/assets/Chef.png'
               alt="fast food"
               width={80}
               height={80}
@@ -49,7 +41,7 @@ export const MidBanner = () => {
           {/* Card 3 */}
           <li className="flex flex-col items-center">
             <Image
-              src={HomeStatisticsIcon3}
+              src='/assets/Chef.png'
               alt="dishes"
               width={80}
               height={80}
@@ -62,7 +54,7 @@ export const MidBanner = () => {
           {/* Card 4 */}
           <li className="flex flex-col items-center">
             <Image
-              src={HomeStatisticsIcon4}
+              src='/assets/Chef.png'
               alt="pizza"
               width={80}
               height={80}

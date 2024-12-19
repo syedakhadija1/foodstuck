@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useRef } from "react";
-import { FaPlay, FaPause, FaTimes } from "react-icons/fa"; // Using react-icons
-import ActivitySection from "../../../public/assets/activebanner.png";
+import { FaPlay, FaPause, FaTimes } from "react-icons/fa";
 
 const ActiveBanner = () => {
   const [isActivePlayer, setIsActivePlayer] = useState(false);
@@ -13,8 +12,7 @@ const ActiveBanner = () => {
     <div className="relative">
       {/* Background Image */}
       <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${ActivitySection.src})` }}
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-[url('/assets/activebanner.png')]"
       ></div>
 
       <div className="relative z-10 flex flex-col-reverse md:flex-row justify-end items-center px-5 py-16 md:px-12 md:py-12">

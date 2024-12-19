@@ -1,16 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaTwitter, FaPinterestP } from "react-icons/fa";
-import herobg from '../../../public/assets/herobg.png'
 
 const HeroSection = () => {
   return (
     <section className="relative bg-black text-white">
       <div
-    className="absolute inset-0 bg-cover bg-center"
-    style={{
-      backgroundImage: `url(${herobg.src})`,
-    }}
+    className="absolute inset-0 bg-cover bg-center bg-[url('/assets/herobg.png')]"
   ></div>
   
   {/* Black Overlay */}
